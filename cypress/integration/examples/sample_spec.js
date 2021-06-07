@@ -4,7 +4,7 @@ describe('My First Test', () => {
 
         cy.contains('Contact').click()
 
-        // should be a new URL which includes '?q=reports'
+        // should be a new URL which includes '/contact'
         cy.url().should('include', '/contact')
     })
 })
